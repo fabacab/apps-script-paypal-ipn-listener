@@ -1,0 +1,28 @@
+# This file tells git what files to ignore when looking at our files.
+# Lines that start with '#' are comments.
+#
+# See https://help.github.com/articles/ignoring-files/ for more info.
+#
+######################################################################
+
+# Mac OS X makes these files to hold Finder window settings.
+# See https://en.wikipedia.org/wiki/.DS_Store for more info.
+.DS_Store
+
+# The popular text editor `vi` and its derivatives (like `vim`) make
+# files with this extension when auto-saving files being edited.
+*.swp
+
+######################################################################
+# Common toolchain utilities like package managers, task runners, and
+# other such tools typically place configuration files or other stuff
+# in the project directory. These aren't actually source code either,
+# so we can safely ignore them.
+######################################################################
+
+# NodeJS modules are stored in this folder.
+node_modules/
+
+# Clasp's OAuth credentials file should be unique for each developer.
+creds.json
+.clasprc.json
